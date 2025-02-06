@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My loveee❤️</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(45deg, #ff66b2, #ff99cc, #ff66b2);
+            text-align: center;
+            padding: 20px;
+            color: #ff1493;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px rgba(255, 105, 180, 0.4);
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px rgba(255, 153, 204, 0.6);
+        }
+
+        .button {
+            background: #ff1493;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            box-shadow: 0px 4px 6px rgba(255, 20, 147, 0.4);
+            margin: 10px;
+        }
+
+        .button:hover {
+            background: #ff007f;
+            transform: scale(1.1);
+        }
+
+        .hidden {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .show {
+            display: block;
+            opacity: 1;
+        }
+
+        .content {
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #ff99cc;
+            color: white;
+            box-shadow: 0px 3px 5px rgba(255, 20, 147, 0.4);
+        }
+
+        .fuck-you {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            background: #ff99cc;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Baeeeeeeeeeeeee</h1>
+        <p>I love love love youuuuuuuuuu</p>
+        <button class="button" onclick="showMessage()">Tap meeeeeee</button>
+
+        <div id="message" class="hidden content">
+            I just wanted to say sorry again.....ermmm for yesterday i mean, and to show off heheee. I'm sooooo soooo sorry for how i acted yesterday. I shouldn't have just gone silent and vanished just like that (got that disappearing shi from my dad😭 heheee). Anyways I wanted to apologize again, so you'd know how sincere I was/am (both I guess).
+
+            <p>Maybe you thought of everything whilst sleeping and decided I wasn't worth it and you'd like to reconsider your choice and actually end things idk.....so errm am i still forgiven????🥲</p>
+            <p>Choose 'nope' first</p>
+            <button class="button" onclick="showLove()">Yessssss</button>
+            <button class="button" onclick="showAnger()">Nope</button>
+        </div>
+
+        <div id="loveMessage" class="hidden content">
+            Yayyyyyyyyyyyy🥳🥳🥳🥳🥳🥳. Thank you🥹 for being my safe space, everything...idk. And yes i want you and I'd be damned if I allow my past or ego get in the way, besides you said I shouldn't act nonchalant around you so yeahhh here I am heheee....chilish as ever😌 (that's why i used pink).
+            I reallyyyy reallyyyy appreciate you sooo sooo much and thank you for choosing to be with me everytime despite my terrible mood swings😔. You're the best that's ever happened to me and having you makes me want to be better. Thank you ml🫶
+            <p>I love you❤️</p>
+        </div>
+
+        <div id="angerMessage" class="hidden fuck-you">
+            Fuck you🖕🏽    
+            <p>I'm sorry and just know you mean sooooo much to me and you matter to me....lots. So yeahhh I'll give you my all....100% yep..and I won't keep stuff from you, I'll open up more so you wouldn't feel distant okayyy and again I'm sorry for making you feel that way.</p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").classList.add("show");
+        }
+
+        function showLove() {
+            document.getElementById("loveMessage").classList.add("show");
+            document.getElementById("angerMessage").classList.remove("show");
+        }
+
+        function showAnger() {
+            document.getElementById("angerMessage").classList.add("show");
+            document.getElementById("loveMessage").classList.remove("show");
+        }
+    </script>
+
+</body>
+</html>
